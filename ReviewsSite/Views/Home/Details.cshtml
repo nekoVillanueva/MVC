@@ -1,0 +1,23 @@
+﻿@model ReviewsSite.Models.Review
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <h1>Details for @Model.title</h1>
+    <section>
+        <h2>@Model.reviewCategory</h2>
+    </section>
+    <section>
+        <p>@Model.content</p>
+    </section>
+    <section><img src="@Model.ImgUrl"></section>
+</body>
+</html>
