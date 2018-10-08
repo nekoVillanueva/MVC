@@ -27,6 +27,7 @@ namespace ReviewsSite
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();//allows images files to be seen by html
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
